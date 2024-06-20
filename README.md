@@ -1,3 +1,38 @@
+[![CI/CD Pipeline](https://github.com/JAlcocerT/openai-chatbot/actions/workflows/GithubActions-CICD.yml/badge.svg)](https://github.com/JAlcocerT/openai-chatbot/actions/workflows/GithubActions-CICD.yml)
+
+
+## Getting Started 
+
+<details>
+  <summary>Clone me and Run me 👇</summary>
+  &nbsp;
+
+Try the Project quickly with [Python Venv's](https://fossengineer.com/python-dependencies-for-ai/):
+
+```sh
+python -m venv groqlit #create it
+
+groqlit\Scripts\activate #activate venv (windows)
+source groqlit/bin/activate #(linux)
+```
+
+```sh
+pip install -r requirements.txt #all at once
+streamlit run streamlit_app.py
+```
+
+* Make sure to have [ollama ready](https://fossengineer.com/selfhosting-llms-ollama/) and running your desired model!
+* Prepare the API Keys in any of:
+    * .streamlit/secrets.toml
+    * As environment Variable
+        * Linux - export OPENAI_API_KEY="YOUR_API_KEY"
+        * CMD - set OPENAI_API_KEY=YOUR_API_KEY
+        * PS - $env:OPENAI_API_KEY="YOUR_API_KEY"
+        * Docker-Compose
+    * Through the Streamlit UI
+</details>
+
+
 # Groq Chat Streamlit App
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://groqdemo.streamlit.app/)
